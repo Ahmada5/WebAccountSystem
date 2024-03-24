@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/* this is a line with "or" teks, its already convert to tailwind both in login and signin */
+.line {
+   position: relative;
+   height: 1px;
+   width: 100%;
+   margin: 36px 0;
+   background-color: white;
+}
+.line::before {
+   content: "Or";
+   position: absolute;
+   top: 50%;
+   right: 50%;
+   transform: translate;
+   background-color: #232836;
+   padding: 0 15px;
+}

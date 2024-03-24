@@ -1,0 +1,40 @@
+{
+  "logins": [
+    {
+      "id": "1",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "aBcDeFgH123!@#"
+    },
+    {
+      "id": "2",
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "password": "XyZ987PqR!@#"
+    },
+    {
+      "id": "3",
+      "username": "bob_jackson",
+      "email": "bob@example.com",
+      "password": "mNoPqRsT456!@#"
+    },
+    {
+      "id": "4",
+      "username": "alice_white",
+      "email": "alice@example.com",
+      "password": "uvw456DEf!@#"
+    },
+    {
+      "id": "5",
+      "username": "david_wilson",
+      "email": "david@example.com",
+      "password": "IjKlmNoP789!@#"
+    },
+    {
+      "id": "c5ea",
+      "username": "achmadsoleh",
+      "email": "Achmad.soleh.ahmada@gmail.com",
+      "password": "Abogoboga963"
+    }
+  ]
+}
