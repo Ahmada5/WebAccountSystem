@@ -35,6 +35,26 @@
       "username": "achmadsoleh",
       "email": "Achmad.soleh.ahmada@gmail.com",
       "password": "Abogoboga963"
+    },
+    {
+      "id": "a380",
+      "username": "regular3dman",
+      "email": "one@gmail.com",
+      "password": "Yeamplow3"
+    }
+  ],
+  "logins2": [
+    {
+      "id": "21",
+      "username": "nice_guy",
+      "email": "ncguy@example.com",
+      "password": "aBcDeasasasx"
+    },
+    {
+      "id": "9dee"
+    },
+    {
+      "id": "2c61"
     }
   ]
 }

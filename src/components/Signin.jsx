@@ -286,22 +286,33 @@ function Signin() {
                            )}
                         </div>
 
-                        <div className="flex mt-5">
+                        <div className="flex mt-5 flex-col ">
                            <button
                               type="submit"
                               disabled={!isFormValid}
                               className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-red-500"
                            >
                               <Link
-                                 to="/dasboard"
+                                 to="/"
                                  onClick={() => {
-                                    window.location.href = "/dasboard";
+                                    window.location.href = "/";
                                  }}
                               >
                                  Sign in
                               </Link>
-                              
                            </button>
+                           <h1 className="flex justify-center">
+                              Already have an account?{" "}
+                              <Link
+                                 to="/Login"
+                                 className="text-blue-500 hover:underline"
+                                 onClick={() => {
+                                    window.location.href = "/Login";
+                                 }}
+                              >
+                                 Log In
+                              </Link>
+                           </h1>
                         </div>
                      </div>
                   </form>

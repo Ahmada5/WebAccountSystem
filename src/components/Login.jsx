@@ -1,8 +1,8 @@
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import icgoogle from "../assets/google.svg";
 import icgithub from "../assets/github2.svg";
+import LoginSection from "../oauth/GoogleoauthLogin";
 
 function Login() {
    const [username, setUsername] = useState("");
@@ -33,9 +33,6 @@ function Login() {
                <h2 className=" text-center text-3xl font-bold leading-9 tracking-tight text-gray-900">
                   Login
                </h2>
-               {error && (
-                  <p className="text-red-500 text-center font-bold">{error}</p>
-               )}
                <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-sm ">
                   <form onSubmit={handleSubmit} className="space-y-6">
                      <div>
@@ -85,11 +82,23 @@ function Login() {
                               type="submit"
                               className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                            >
-                              Log in
+                              <Link
+                                 to="/Dasboard"
+                                 onClick={() => {
+                                    window.location.href = "/";
+                                 }}
+                              >
+                                 Log in
+                              </Link>
                            </button>
                         </div>
                      </div>
                   </form>
+                  {error && (
+                     <p className="text-red-500 text-center font-bold">
+                        {error}
+                     </p>
+                  )}
                   <div className="flex justify-center">
                      <h1>
                         Don't have an account?{" "}
@@ -108,11 +117,11 @@ function Login() {
                   <div className="relative mt-16">
                      <hr className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full border-t border-y-black" />
                      <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-3 text-gray-900">
-                        Or
+                        Or Login With
                      </span>
                   </div>
                   <div className="flex flex-col">
-                     <div className="flex mt-12 w-full justify-center rounded-md bg-gray-900 px-3 py-1.5 hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
+                     {/* <div className="flex mt-12 w-full justify-center rounded-md bg-gray-900 px-3 py-1.5 hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
                         <img
                            src={icgithub}
                            alt="google logo"
@@ -121,17 +130,9 @@ function Login() {
                         <button className="flex  text-sm font-semibold leading-6 text-white shadow-sm ">
                            Log in with Github
                         </button>
-                     </div>
-
-                     <div className="flex mt-5 w-full justify-center rounded-md bg-slate-100 px-3 py-1.5 hover:bg-slate-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-100">
-                        <img
-                           src={icgoogle}
-                           alt="google logo"
-                           className="w-3 h-auto mr-3"
-                        />
-                        <button className="flex text-sm font-semibold leading-6 text-black shadow-sm ">
-                           Log in with Google
-                        </button>
+                     </div> */}
+                     <div className="flex justify-center mt-5">
+                        <LoginSection />
                      </div>
                   </div>
                </div>
